@@ -3,7 +3,11 @@ const cors = require('cors');
 const axios = require('axios');
 const app = express();
 
-app.use(cors());
+// Configure CORS to allow requests from the specific origin
+app.use(cors({
+  origin: 'https://eco-cart-frontend.vercel.app'
+}));
+
 app.use(express.json());
 
 app.post('/scrape', async (req, res) => {
