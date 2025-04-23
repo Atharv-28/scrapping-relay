@@ -5,7 +5,7 @@ const app = express();
 
 // Configure CORS to allow requests from the specific origin
 app.use(cors({
-  origin: ['https://eco-cart-frontend.vercel.app', '*', 'http://localhost:300']
+  origin: ['https://eco-cart-frontend.vercel.app', '*', 'http://localhost:3000']
 }));
 app.use(express.json());
 
